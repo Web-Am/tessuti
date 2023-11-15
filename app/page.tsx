@@ -97,7 +97,7 @@ export default function Home() {
             <div className="mt-5">
               <div className="mb-2"><i className="bi-heart fs-1 text-primary"></i></div>
               <h3 className="h4 mb-2">Passione</h3>
-              <p className="text-muted mb-0">Per coloro che c'hanno il fuoco dentro</p>
+              <p className="text-muted mb-0">Per coloro che c hanno il fuoco dentro</p>
             </div>
           </div>
         </div>
@@ -170,14 +170,19 @@ export default function Home() {
       </div>
     </section>
 
-
+    <section className="page-section bg-dark text-white">
+      <div className="container px-4 px-lg-5 text-center">
+        <h2 className="mb-4">EVENTI?</h2>
+        <h6 className="mb-4">Lista eventi..</h6>
+      </div>
+    </section>
 
 
     <section className="page-section" id="contact">
       <div className="container px-4 px-lg-5">
         <div className="row gx-4 gx-lg-5 justify-content-center">
           <div className="col-lg-8 col-xl-6 text-center">
-            <h2 className="mt-0">Let's Get In Touch!</h2>
+            <h2 className="mt-0">Let s Get In Touch!</h2>
             <hr className="divider" />
             <p className="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
           </div>
@@ -226,8 +231,6 @@ export default function Home() {
         </div>
       </div>
     </section>
-
-
 
     <footer className="bg-light py-5">
       <div className="container px-4 px-lg-5"><div className="small text-center text-muted">Copyright &copy; 2023 - Silvia</div></div>
