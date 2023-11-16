@@ -90,16 +90,29 @@ a {
   }
 }
 
-
-
 .form-signin {
   width: 100%;
-  max-width: 330px;
+  max-width: 390px;
   padding: 15px;
   margin: auto;
 }
 
 
+
+
+
+
+
+
+
+
+/*** 
+
+====================================================================
+	 Burgher
+====================================================================
+
+***/
 #burger-container {
   list-style-type: none;
   position: relative;
@@ -107,13 +120,11 @@ a {
   width: 30px;
 }
 
-
 #burger {
   cursor: pointer;
   display: block;
   list-style-type: none;
 }
-
 
 #burger span {
   list-style-type: none;
@@ -131,11 +142,9 @@ a {
 #burger-container.open span:nth-child(3) {
   width: 0;
   opacity: 0;
-
 }
 
 #burger-container.open span:nth-child(1) {
-
   transform: rotate(-45deg);
   top: 10px;
 }

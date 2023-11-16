@@ -8,7 +8,6 @@ export default function Home() {
 
   const onHide = (e: any) => {
 
-    e.preventiveDefaults();
     document.getElementById("navbarResponsive")?.classList.remove("show")
     setHambu("");
   }
@@ -16,7 +15,7 @@ export default function Home() {
   return <div>
     <nav className="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
       <div className="container px-4 px-lg-5">
-        <a className="navbar-brand bg-white text-dark rounded p-2" href="#page-top">Silvia - Tessuti</a>
+        <a className="navbar-brand bg-white text-dark rounded p-2 px-4" href="#page-top">Silvia - Tessuti</a>
         <button className="bg-white border-0 p-0" style={{ outline: '0px !important' }}
           type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
           <div id="burger-container" className={"d-md-none " + hambu}
@@ -50,7 +49,7 @@ export default function Home() {
           </div>
           <div className="col-lg-8 align-self-baseline">
             <p className="text-white-75 mb-5">Comincia da qui!</p>
-            <a className="btn btn-primary btn-xl" href="#about">Vedi di più</a>
+            <a className="btn btn-primary btn-xl" href="#services">Vedi di più</a>
           </div>
         </div>
       </div>
@@ -170,12 +169,262 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="page-section bg-dark text-white">
-      <div className="container px-4 px-lg-5 text-center">
-        <h2 className="mb-4">EVENTI?</h2>
-        <h6 className="mb-4">Lista eventi..</h6>
+
+
+
+
+
+
+    <section className="schedule-section">
+
+      <div className="anim-icons">
+
+        <span className="icon icon-circle-4 wow zoomIn animated" ></span>
+
+        <span className="icon icon-circle-3 wow zoomIn animated" ></span>
+
       </div>
+
+
+
+      <div className="auto-container">
+
+        <div className="sec-title text-center mb-5">
+
+          <span className="title">Prossimi eventi</span>
+
+          <h2>Pianificati</h2>
+
+        </div>
+
+
+
+        <div className="schedule-tabs tabs-box">
+
+          <div className="btns-box d-none">
+
+
+            <ul className="tab-buttons clearfix">
+
+              <li className="tab-btn active-btn" data-tab="#tab-1">
+
+                <span className="day">Day 01</span>
+
+                <span className="date">01</span>
+
+                <span className="month">Jan</span> 2023
+
+              </li>
+
+
+
+              <li className="tab-btn" data-tab="#tab-2">
+
+                <span className="day">Day 02</span>
+
+                <span className="date">02</span>
+
+                <span className="month">Jan</span> 2023
+
+              </li>
+
+
+
+              <li className="tab-btn" data-tab="#tab-3">
+
+                <span className="day">Day 03</span>
+
+                <span className="date">03</span>
+
+                <span className="month">Jan</span> 2023
+
+              </li>
+
+
+
+              <li className="tab-btn" data-tab="#tab-4">
+
+                <span className="day">Day 04</span>
+
+                <span className="date">04</span>
+
+                <span className="month">Jan</span> 2023
+
+              </li>
+
+            </ul>
+
+          </div>
+
+
+
+          <div className="tabs-content">
+
+
+
+
+            <div className="tab active-tab" id="tab-1">
+
+              <div className="schedule-timeline">
+
+
+                <div className="schedule-block">
+
+                  <div className="inner-box">
+
+                    <div className="inner">
+
+                      <div className="date">10/11/2023 <br /> 21.00 </div>
+
+                      <div className="speaker-info">
+
+                        <figure className="thumb"><img src="https://expert-themes.com/html/eventrox/images/resource/thumb-1.jpg" alt="" /></figure>
+
+                        <h5 className="name">Silvia</h5>
+
+                        <span className="designation">Istruttrice</span>
+
+                      </div>
+
+                      <h4><a href="event-detail.html">La mossa del gamberetto</a></h4>
+
+                      <div className="text">Impariamo a fare la mossa del gamberetto</div>
+
+                      <div className="btn-box d-none">
+
+                        <a href="event-detail.html" className="theme-btn d-none">Read More</a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div className="schedule-block even">
+
+                  <div className="inner-box">
+
+                    <div className="inner">
+
+                      <div className="date">17/11/2023 <br /> 21.00 </div>
+
+                      <div className="speaker-info">
+
+                        <figure className="thumb"><img src="https://expert-themes.com/html/eventrox/images/resource/thumb-2.jpg" alt="" /></figure>
+
+                        <h5 className="name">Silvia</h5>
+
+                        <span className="designation">Istruttrice</span>
+
+                      </div>
+
+                      <h4><a href="event-detail.html">Il salto carpiato discentente</a></h4>
+
+                      <div className="text">Mossa finale</div>
+
+                      <div className="btn-box d-none">
+
+                        <a href="event-detail.html" className="theme-btn">Read More</a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+
+                <div className="schedule-block">
+
+                  <div className="inner-box">
+
+                    <div className="inner">
+
+                      <div className="date">17/11/2023 <br /> 21.00 </div>
+
+                      <div className="speaker-info">
+
+                        <figure className="thumb"><img src="https://expert-themes.com/html/eventrox/images/resource/thumb-2.jpg" alt="" /></figure>
+
+                        <h5 className="name">Silvia</h5>
+
+                        <span className="designation">Istruttrice</span>
+
+                      </div>
+
+                      <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
+
+                      <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
+
+                      <div className="btn-box d-none">
+
+                        <a href="event-detail.html" className="theme-btn">Read More</a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+
+
+                <div className="schedule-block even">
+
+                  <div className="inner-box">
+
+                    <div className="inner">
+
+                      <div className="date">17/11/2023 <br /> 21.00 </div>
+
+                      <div className="speaker-info">
+
+                        <figure className="thumb"><img src="https://expert-themes.com/html/eventrox/images/resource/thumb-2.jpg" alt="" /></figure>
+
+                        <h5 className="name">Silvia</h5>
+
+                        <span className="designation">Istruttrice</span>
+
+                      </div>
+
+                      <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
+
+                      <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
+
+                      <div className="btn-box d-none">
+
+                        <a href="event-detail.html" className="theme-btn">Read More</a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
+
+
+
 
 
     <section className="page-section" id="contact">
@@ -184,7 +433,7 @@ export default function Home() {
           <div className="col-lg-8 col-xl-6 text-center">
             <h2 className="mt-0">Let s Get In Touch!</h2>
             <hr className="divider" />
-            <p className="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
+            <p className="text-muted mb-5">Ready to start with us? Send us a messages and we will get back to you as soon as possible!</p>
           </div>
         </div>
         <div className="row gx-4 gx-lg-5 justify-content-center mb-5">

@@ -1,0 +1,684 @@
+/*** 
+
+====================================================================
+	schedule Section
+====================================================================
+
+***/
+
+.schedule-section {
+    position: relative;
+    padding: 120px 0 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.schedule-section .icon-circle-4 {
+    right: -200px;
+    bottom: 160px;
+}
+
+.schedule-section .icon-circle-3 {
+    left: -375px;
+    top: 340px;
+    opacity: .30;
+}
+
+.tabs-box {
+    position: relative;
+}
+
+.tabs-box .tab {
+    display: none;
+}
+
+.tabs-box .tab.active-tab {
+    display: block;
+}
+
+.schedule-tabs {
+    position: relative;
+}
+
+.schedule-tabs .btns-box {
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.schedule-tabs .tab-buttons {
+    position: relative;
+    text-align: center;
+}
+
+.schedule-tabs .tab-buttons li {
+    position: relative;
+    display: inline-block;
+    height: 135px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px 15px;
+    padding-top: 70px;
+    padding-left: 90px;
+    cursor: pointer;
+    margin: 0 15px 20px;
+    border: 1px solid #dddddd;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.schedule-tabs .tab-buttons li .day {
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    padding: 5px 20px;
+    background-color: #222222;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 0 15px 15px 0;
+}
+
+.schedule-tabs .tab-buttons li .date {
+    position: absolute;
+    left: -0;
+    top: 80px;
+    width: 100px;
+    text-align: center;
+    font-size: 38px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.schedule-tabs .tab-buttons li .month {
+    display: block;
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.schedule-tabs .tab-buttons li .year {
+    font-size: 30px;
+}
+
+.schedule-tabs .tab-buttons li.active-btn {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .10);
+}
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 1) .day {
+    background-color: #ffc20b;
+}
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 2) .day {
+    background-color: #40cbb4;
+}
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 3) .day {
+    background-color: #4c35a9;
+}
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 4) .day {
+    background-color: #e6275a;
+}
+
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 1) .month,
+.schedule-tabs .tab-buttons li:nth-child(4n + 1) .date {
+    color: #ffc20b;
+}
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 2) .month,
+.schedule-tabs .tab-buttons li:nth-child(4n + 2) .date {
+    color: #40cbb4;
+}
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 3) .month,
+.schedule-tabs .tab-buttons li:nth-child(4n + 3) .date {
+    color: #4c35a9;
+}
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 4) .month,
+.schedule-tabs .tab-buttons li:nth-child(4n + 4) .date {
+    color: #e6275a;
+}
+
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 1).active-btn {
+    box-shadow: 0 0px 30px rgba(255, 194, 11, .30);
+    border: 1px solid #ffc20b;
+}
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 2).active-btn {
+    box-shadow: 0 0px 30px rgba(64, 203, 180, .30);
+    border: 1px solid #40cbb4;
+}
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 3).active-btn {
+    box-shadow: 0 0px 30px rgba(76, 53, 169, .30);
+    border: 1px solid #4c35a9;
+}
+
+.schedule-tabs .tab-buttons li:nth-child(4n + 4).active-btn {
+    box-shadow: 0 0px 30px rgba(230, 39, 90, .30);
+    border: 1px solid #e6275a;
+}
+
+.schedule-timeline {
+    position: relative;
+}
+
+/*=== Schedule Block ===*/
+
+.schedule-block {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.schedule-block:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.schedule-block .inner-box {
+    position: relative;
+    float: right;
+    width: 50%;
+    text-align: left;
+}
+
+.schedule-block .inner-box .inner {
+    position: relative;
+    padding: 20px 33px 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    margin-left: 80px;
+    border-radius: 20px;
+}
+
+.schedule-block .inner:before {
+    position: absolute;
+    top: 0;
+    bottom: -30px;
+    right: 100%;
+    border-left: 2px dashed #dddddd;
+    content: "";
+    margin-right: 80px;
+}
+
+.schedule-block .inner:after {
+    position: absolute;
+    right: 100%;
+    top: 35px;
+    border-top: 15px solid transparent;
+    border-right: 20px solid #ffffff;
+    border-bottom: 15px solid transparent;
+    content: "";
+}
+
+.schedule-block .date {
+    position: absolute;
+    left: -132px;
+    width: 100px;
+    top: 0px;
+    height: 100px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #212639;
+    font-weight: 500;
+    padding: 33px 15px 0;
+    border-radius: 50%;
+    border: 2px dashed #dddddd;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-block .speaker-info {
+    position: relative;
+    padding-left: 80px;
+    padding-top: 10px;
+    min-height: 60px;
+}
+
+.schedule-block .speaker-info .thumb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.schedule-block .speaker-info .name {
+    font-size: 16px;
+    color: #212639;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.schedule-block .speaker-info .designation {
+    font-size: 13px;
+}
+
+.schedule-block h4 {
+    position: relative;
+    font-size: 22px;
+    line-height: 1.2em;
+    color: #0f1925;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.schedule-block h4 a {
+    color: #212639;
+    display: inline-block;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.schedule-block h4 a:hover {
+    color: #f14b59;
+}
+
+.schedule-block .text {
+    position: relative;
+    font-size: 16px;
+    line-height: 26px;
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.schedule-block .btn-box {
+    position: relative;
+    padding: 6px 0;
+}
+
+.schedule-block .btn-box a {
+    padding: 10px 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #444444;
+    color: #ffffff;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.schedule-block .btn-box a:hover {
+    color: #ffffff;
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.10); */
+}
+
+.schedule-block.even .inner-box {
+    float: left;
+    text-align: right;
+}
+
+.schedule-block.even .inner-box .inner {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.schedule-block.even .inner:before {
+    right: auto;
+    left: 100%;
+    margin-left: 80px;
+    margin-right: 0;
+}
+
+.schedule-block.even .inner:after {
+    right: auto;
+    left: 100%;
+    border-right: 0;
+    border-left: 20px solid #ffffff;
+}
+
+.schedule-block:last-child .inner:before {
+    display: none;
+}
+
+.schedule-block.even .date {
+    left: auto;
+    right: -132px;
+}
+
+.schedule-block.even .speaker-info {
+    padding-left: 0;
+    padding-right: 80px;
+}
+
+.schedule-block.even .speaker-info .thumb {
+    left: auto;
+    right: 0;
+}
+
+.schedule-block:nth-child(4n + 1) .date,
+.schedule-block:nth-child(4n + 1) .inner:before {
+    border-color: #ffc20b;
+}
+
+.schedule-block:nth-child(4n + 2) .date,
+.schedule-block:nth-child(4n + 2) .inner:before {
+    border-color: #40cbb4;
+}
+
+.schedule-block:nth-child(4n + 3) .date,
+.schedule-block:nth-child(4n + 3) .inner:before {
+    border-color: #4c35a9;
+}
+
+.schedule-block:nth-child(4n + 4) .date,
+.schedule-block:nth-child(4n + 4) .inner:before {
+    border-color: #e6275a;
+}
+
+/* Backgroud */
+
+.schedule-block:nth-child(4n + 1) .btn-box a {
+    background-color: #ffc20b;
+}
+
+.schedule-block:nth-child(4n + 1) .btn-box a:hover {
+    color: #ffc20b;
+    border-radius: 0px;
+    background: none;
+    border-color: #ffc20b;
+}
+
+.schedule-block:nth-child(4n + 2) .btn-box a {
+    background-color: #40cbb4;
+}
+
+.schedule-block:nth-child(4n + 2) .btn-box a:hover {
+    border-radius: 0px;
+    color: #40cbb4;
+    background: none;
+    border-color: #40cbb4;
+}
+
+
+
+
+
+.schedule-block:nth-child(4n + 3) .btn-box a {
+    background-color: #4c35a9;
+}
+
+.schedule-block:nth-child(4n + 3) .btn-box a:hover {
+    border-radius: 0px;
+    color: #4c35a9;
+    background: none;
+    border-color: #4c35a9;
+}
+
+
+
+.schedule-block:nth-child(4n + 4) .btn-box a {
+    background-color: #e6275a;
+}
+
+.schedule-block:nth-child(4n + 4) .btn-box a:hover {
+    border-radius: 0px;
+    color: #e6275a;
+    background: none;
+    border-color: #e6275a;
+}
+
+/* color */
+
+.schedule-section.style-three .schedule-block:nth-child(4n + 1) .date,
+.schedule-section.style-two .schedule-block:nth-child(4n + 1) .date,
+.schedule-block:nth-child(4n + 1) h4 a:hover {
+    color: #ffc20b;
+}
+
+.schedule-section.style-three .schedule-block:nth-child(4n + 2) .date,
+.schedule-section.style-two .schedule-block:nth-child(4n + 2) .date,
+.schedule-block:nth-child(4n + 2) h4 a:hover {
+    color: #40cbb4;
+}
+
+.schedule-section.style-three .schedule-block:nth-child(4n + 3) .date,
+.schedule-section.style-two .schedule-block:nth-child(4n + 3) .date,
+.schedule-block:nth-child(4n + 3) h4 a:hover {
+    color: #4c35a9;
+}
+
+.schedule-section.style-three .schedule-block:nth-child(4n + 4) .date,
+.schedule-section.style-two .schedule-block:nth-child(4n + 4) .date,
+.schedule-block:nth-child(4n + 4) h4 a:hover {
+    color: #e6275a;
+}
+
+
+/*** 
+
+====================================================================
+	schedule Section Style two
+====================================================================
+
+***/
+
+.schedule-section.style-two {
+    position: relative;
+}
+
+.schedule-section.style-two .schedule-block .date {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.schedule-section.style-two .schedule-block .inner-box {
+    width: 100%;
+}
+
+.schedule-section.style-two .schedule-block .inner-box .inner {
+    margin: 0;
+    padding: 50px 50px 40px;
+    box-shadow: 0 0 33px rgba(0, 0, 0, 0.10);
+}
+
+.schedule-section.style-two .schedule-block .inner:before,
+.schedule-section.style-two .schedule-block .inner:after {
+    display: none;
+}
+
+.schedule-section.style-two .schedule-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/*** 
+
+====================================================================
+	schedule Section Style Three
+====================================================================
+
+***/
+
+.schedule-section.style-three {
+    position: relative;
+}
+
+.schedule-tabs.style-three .tab-buttons li {
+    float: left;
+    width: 25%;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    border-color: transparent;
+}
+
+.schedule-tabs.style-three .tab-buttons li.active-btn {
+    z-index: 2;
+}
+
+.schedule-section.style-three .schedule-block .date {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.schedule-section.style-three .schedule-block .inner-box {
+    width: 100%;
+}
+
+.schedule-section.style-three .schedule-block .inner-box .inner {
+    margin: 0;
+    padding: 50px 50px 40px;
+    box-shadow: 0 0 33px rgba(0, 0, 0, 0.10);
+}
+
+.schedule-section.style-three .schedule-block .inner:before,
+.schedule-section.style-three .schedule-block .inner:after {
+    display: none;
+}
+
+.schedule-section.style-three .schedule-timeline {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 599px) {
+
+    .schedule-block.even .inner-box .inner {
+        margin: 0;
+        float: right;
+        width: 90%;
+    }
+
+    .schedule-block .inner-box .inner {
+        margin: 0;
+        float: left;
+        width: 90%;
+    }
+
+    .schedule-block .inner-box {
+        width: 90%;
+    }
+
+    .schedule-block.even .inner-box {
+        text-align: right;
+    }
+
+    .schedule-block.even .inner-box {
+        text-align: right;
+    }
+
+    .schedule-block .date {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 15px;
+        left: 0;
+        top: 0;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        height: auto;
+        width: auto;
+    }
+
+    .schedule-block.even .date {
+        right: 0;
+    }
+
+    .coming-soon-section .outer-box {
+        margin: 0 -15px;
+        padding: 30px 15px;
+    }
+
+    .coming-soon-section .time-countdown .counter-column,
+    .coming-soon-section-two .time-countdown .counter-column {
+        margin: 0 10px;
+        width: auto;
+    }
+
+    .coming-soon-section .time-countdown .counter-column .count,
+    .coming-soon-section-two .time-countdown .counter-column .count {
+        font-size: 30px;
+    }
+
+    .coming-soon-section .time-countdown .counter-column:before {
+        font-size: 30px;
+        right: -15px;
+        top: 0px;
+    }
+
+    .event-info-tabs .tab-btn {
+        margin-right: 0;
+    }
+
+    .schedule-section.style-two .schedule-block .inner-box .inner {
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .schedule-section.style-two .schedule-block .speaker-info .thumb {
+        position: relative;
+        display: inline-block;
+        left: 0;
+        top: 0;
+        margin-bottom: 5px;
+    }
+
+    .schedule-section.style-two .schedule-block .speaker-info {
+        padding-left: 0;
+        text-align: center;
+    }
+}
